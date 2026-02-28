@@ -142,9 +142,12 @@ export default function HomePage() {
                 <p className="text-slate-500 text-lg leading-relaxed">
                   Stuck on your research? We provide structured mentorship for BSc, Masters, and PhD students. From topic selection to final defense preparation.
                 </p>
-                <button className="px-8 py-4 bg-slate-900 text-white rounded-full font-medium hover:bg-blue-600 transition-all">
+                <Link 
+                  href="/enroll" 
+                  className="inline-block px-8 py-4 bg-slate-900 text-white rounded-full font-medium hover:bg-blue-600 transition-all text-center"
+                >
                   Book a Consultation
-                </button>
+                </Link>
              </div>
           </div>
         </div>
