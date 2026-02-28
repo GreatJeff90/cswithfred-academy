@@ -153,13 +153,13 @@ export default function RoadmapPage() {
                   Join the Lab
                 </button>
               </Link>
-               <a 
-  href="/cs-roadmap.pdf" 
-  download="CS_with_Fred_Roadmap.pdf"
-  className="inline-flex items-center gap-2 px-10 py-4 border border-slate-700 text-white rounded-full font-bold hover:bg-slate-900 transition-all text-center"
->
-  <Download size={18} /> Download PDF Roadmap
-</a>
+              <a 
+                href="/cs_roadmap.pdf" 
+                download="CS_with_Fred_Roadmap.pdf"
+                className="inline-flex items-center gap-2 px-10 py-4 border border-slate-700 text-white rounded-full font-bold hover:bg-slate-900 transition-all text-center cursor-pointer"
+              >
+                <Download size={18} /> Download PDF Roadmap
+              </a>
             </div>
           </div>
           {/* Subtle background decoration */}
