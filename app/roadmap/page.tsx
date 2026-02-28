@@ -11,7 +11,9 @@ import {
   Shield, 
   Layers,
   ChevronRight,
-  Circle
+  Circle,
+  Link,
+  Download
 } from 'lucide-react';
 
 const roadmapData = [
@@ -146,12 +148,18 @@ export default function RoadmapPage() {
               Our curriculum is modular. Whether you want to focus on Security, Cloud Infrastructure, or AI, we have specific labs ready for you.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-               <button className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition-all">
+               <Link href="/register">
+                <button className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition-all">
                   Join the Lab
-               </button>
-               <button className="px-10 py-4 border border-slate-700 text-white rounded-full font-bold hover:bg-slate-900 transition-all">
-                  Download PDF Roadmap
-               </button>
+                </button>
+              </Link>
+               <a 
+  href="/cs-roadmap.pdf" 
+  download="CS_with_Fred_Roadmap.pdf"
+  className="inline-flex items-center gap-2 px-10 py-4 border border-slate-700 text-white rounded-full font-bold hover:bg-slate-900 transition-all text-center"
+>
+  <Download size={18} /> Download PDF Roadmap
+</a>
             </div>
           </div>
           {/* Subtle background decoration */}
